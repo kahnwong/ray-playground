@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ray-playground"
+version = "0.1.0"
+description = ""
+authors = ["Karn Wong <karn@karnwong.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter = "^1.0.0"
+scikit-learn = "^1.5.0"
+joblib = "^1.4.2"
+ray = {extras = ["train"], version = "^2.23.0"}
+numpy = "^1.26.4"
+tqdm = "^4.66.4"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
