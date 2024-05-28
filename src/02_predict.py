@@ -7,9 +7,10 @@ from ray.util.joblib import register_ray
 
 
 register_ray()
+context = ray.init()
 
 # read data
-path = "/Users/kahnwong/Git/data/nyc-trip-data/limit=100000"  # 30000000"
+path = "/Users/kahnwong/Git/data/nyc-trip-data/limit=5000000"
 ds = ray.data.read_parquet(path).select_columns(["passenger_count", "trip_distance"])
 
 

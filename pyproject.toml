@@ -10,9 +10,9 @@ python = "^3.11"
 jupyter = "^1.0.0"
 scikit-learn = "^1.5.0"
 joblib = "^1.4.2"
-ray = {extras = ["train"], version = "^2.23.0"}
 numpy = "^1.26.4"
 tqdm = "^4.66.4"
+ray = {extras = ["default", "train"], version = "^2.23.0"}
 
 
 [tool.poetry.group.dev.dependencies]
